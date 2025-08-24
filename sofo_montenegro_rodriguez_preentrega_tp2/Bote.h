@@ -1,0 +1,26 @@
+#pragma once
+#include <ncurses.h>
+
+class Bote
+{
+public:
+  void setup();
+  void draw();
+  void update();
+  void explotar();
+
+  void setX(int x);
+  void setY(int y);
+
+  int getX();
+  int getY();
+
+  void setVidas(int vidas);
+  int getVidas();
+
+private:
+  int m_x, m_y;
+  int m_vidas;          
+  bool m_explotar;
+};
+
