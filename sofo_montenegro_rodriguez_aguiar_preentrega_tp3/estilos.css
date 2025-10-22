@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+header{
+    width: 100%;
+    background: rgba(103, 34, 117,.8);
+   height: 90px;
+   position:fixed;
+   z-index:10;
+   
+}
+
+.ancho{
+    width: 80%;
+    height: 90px;
+    background: rgba(103, 34, 117,.8);
+    margin: auto;
+}
+
+
+.logo{
+    width: 30%;
+    height: 90px;
+    background: rgba(103, 34, 117,.8);
+    float: left;
+    padding-top: 5px;
+   padding-left: 80px;
+   box-sizing: border-box;
+}
+.logo p a{
+color:rgb(176, 138, 212);
+font-size: 30px;
+text-decoration: none;
+ font-family: alfa;
+ letter-spacing: 2px;
+}
+
+nav{ 
+    width: 70%;
+    height: 90px;
+    float: left;
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+nav ul li{
+    display:inline;
+}
+nav ul li a{
+    color:rgb(176, 138, 212); ;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 20px;
+    letter-spacing: 1px;
+     font-family: alfa;
+}
+nav ul li a:hover{
+color: rgb(107, 20, 53);
+}
+
+@font-face{
+    font-family: alfa;
+    src: url(fuentes/AlfaSlabOne-Regular.ttf)
+}
