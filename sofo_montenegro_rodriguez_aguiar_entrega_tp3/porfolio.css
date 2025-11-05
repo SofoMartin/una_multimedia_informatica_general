@@ -1,0 +1,142 @@
+.galeria {
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 20px;
+    min-height: calc(100vh - 90px);
+    gap: 20px;
+    position: relative;
+}
+
+.miniatura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightgray;
+    width: 200px;
+    height: 180px;
+    padding: 15px;
+    margin: 0;
+    text-decoration: none;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.miniatura:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.miniatura img {
+    border-radius: 4px;
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+    flex-shrink: 0;
+}
+
+.miniatura span {
+    display: block;
+    color: gray;
+    margin-top: 8px;
+    font-size: 80%;
+    text-align: center;
+    width: 100%;
+}
+
+#contenedor_imagen_grande {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    flex-direction: column;
+}
+
+#contenedor_imagen_grande a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#imagen_grande {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+    object-fit: contain;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .galeria {
+        justify-content: center;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .miniatura {
+        width: 170px;
+        height: 160px;
+    }
+    
+    .miniatura img {
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria {
+        gap: 10px;
+        padding: 10px;
+        margin-top: 90px;
+    }
+    
+    .miniatura {
+        width: 150px;
+        height: 140px;
+        padding: 10px;
+    }
+    
+    .miniatura img {
+        height: 90px;
+    }
+}
+
+@media (max-width: 360px) {
+    .galeria {
+        gap: 8px;
+        padding: 8px;
+        margin-top: 90px;
+    }
+    
+    .miniatura {
+        width: 140px;
+        height: 130px;
+        padding: 8px;
+    }
+    
+    .miniatura img {
+        height: 80px;
+    }
+}
