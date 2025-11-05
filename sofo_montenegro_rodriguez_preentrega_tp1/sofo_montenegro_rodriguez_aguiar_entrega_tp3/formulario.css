@@ -1,0 +1,153 @@
+.formulario-consultas {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    margin-top: 40px;
+    border-left: 5px solid rgb(234, 107, 156);
+}
+
+.formulario-consultas h2 {
+    color: rgb(103, 34, 117);
+    font-family: alfa;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.formulario-consultas > p {
+    color: rgb(110, 76, 117);
+    font-family: alfa;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+.form-contacto fieldset {
+    background: #f6f8ff;
+    border: 2px solid rgb(103, 34, 117);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form-contacto legend {
+    color: rgb(103, 34, 117);
+    font-family: alfa;
+    font-size: 18px;
+    padding: 0 15px;
+    letter-spacing: 1px;
+}
+
+.campo-formulario {
+    margin-bottom: 20px;
+}
+
+.campo-formulario input,
+.campo-formulario select,
+.campo-formulario textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid rgb(176, 138, 212);
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.campo-formulario input:focus,
+.campo-formulario select:focus,
+.campo-formulario textarea:focus {
+    outline: none;
+    border-color: rgb(103, 34, 117);
+    box-shadow: 0 0 8px rgba(103, 34, 117, 0.3);
+}
+
+.campo-formulario textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.boton-enviar {
+    width: 100%;
+    background: rgb(234, 107, 156);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    font-family: alfa;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.boton-enviar:hover {
+    background: rgb(103, 34, 117);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(103, 34, 117, 0.3);
+}
+
+.mensaje-error {
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0;
+    padding: 10px;
+    background: pink;
+    border-radius: 5px;
+    border: 1px solid brown;
+}
+
+.error {
+    background-color: pink;
+    border-color: brown !important;
+}
+
+@media (max-width: 768px) {
+    .formulario-consultas {
+        padding: 30px 20px;
+        margin-top: 30px;
+    }
+    
+    .formulario-consultas h2 {
+        font-size: 24px;
+    }
+    
+    .form-contacto fieldset {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario-consultas {
+        padding: 25px 15px;
+        margin-top: 25px;
+    }
+    
+    .formulario-consultas h2 {
+        font-size: 22px;
+    }
+    
+    .form-contacto fieldset {
+        padding: 15px;
+    }
+    
+    .campo-formulario input,
+    .campo-formulario select,
+    .campo-formulario textarea {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+    
+    .boton-enviar {
+        padding: 12px;
+        font-size: 16px;
+    }
+}

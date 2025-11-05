@@ -1,0 +1,243 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('img/fondo.svg');
+    background-repeat: repeat;
+    background-size: 100px 100px
+}
+
+header{
+    width: 100%;
+    background: rgba(103, 34, 117,.8);
+    height: 90px;
+    position:fixed;
+    z-index:10;
+}
+
+.ancho{
+    width: 90%;
+    max-width: 1200px;
+    height: 90px;
+    background: rgba(103, 34, 117,.8);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.logo{
+    padding-top: 0; 
+    padding-left: 20px;
+    flex: 1;
+}
+
+.logo-imagen {
+    height: 60px; 
+    width: auto;
+    display: block;
+}
+
+nav{ 
+    flex: 2;
+    text-align: right;
+    padding-right: 20px; 
+    display: flex;
+    align-items: center; 
+    height: 100%; 
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    align-items: center; 
+    width: 100%;
+}
+
+nav ul li{
+    margin-left: 15px;
+    list-style: none;
+}
+
+nav ul li a{
+    color:rgb(176, 138, 212);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: alfa;
+    padding: 8px 12px;
+    display: block;
+}
+
+nav ul li a:hover{
+    color: rgb(234, 107, 156);
+}
+
+main {
+    flex: 1;
+    padding-top: 80px; 
+}
+
+footer {
+    background: rgba(103, 34, 117, 0.9);
+    color: rgb(176, 138, 212);
+    text-align: center;
+    padding: 20px 0;
+    font-family: alfa;
+    margin-top: auto;
+}
+
+footer .ancho {
+    background: transparent;
+    height: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+@font-face{
+    font-family: alfa;
+    src: url(fuentes/AlfaSlabOne-Regular.ttf)
+}
+
+/*adaptar pantalla*/
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        min-height: 90px;
+    }
+    
+    .ancho {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    
+    .logo {
+        padding: 10px 0;
+        text-align: center;
+        padding-left: 0;
+    }
+    
+    nav {
+        padding: 10px 0;
+        text-align: center;
+        padding-right: 0;
+    }
+    
+    nav ul {
+        justify-content: center;
+        list-style: none;
+    }
+    
+    nav ul li {
+        margin: 5px 10px;
+        list-style: none;
+    }
+    
+    .logo p a {
+        font-size: 20px;
+    }
+    
+    nav ul li a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+    
+    footer {
+        padding: 15px 0;
+    }
+    
+    footer p {
+        font-size: 12px;
+    }
+
+    main {
+        padding-top: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ancho {
+        width: 100%;
+        padding: 5px 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+    }
+    
+    nav ul li {
+        margin: 3px 0;
+        list-style: none;
+    }
+    
+    .logo p a {
+        font-size: 18px;
+    }
+    
+    nav ul li a {
+        font-size: 13px;
+        padding: 5px 8px;
+    }
+    
+    footer {
+        padding: 10px 0;
+    }
+    
+    footer p {
+        font-size: 11px;
+    }
+
+    main {
+        padding-top: 230px;
+    }
+}
+
+#loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(103, 34, 117); 
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.8s ease-out, visibility 0s 0.8s;
+}
+
+.loader-oculto {
+    opacity: 0 !important;
+    visibility: hidden;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 1s ease-out 0.6s, transform 1s ease-out 0.6s;
+}
+
+.animacion-activa {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}

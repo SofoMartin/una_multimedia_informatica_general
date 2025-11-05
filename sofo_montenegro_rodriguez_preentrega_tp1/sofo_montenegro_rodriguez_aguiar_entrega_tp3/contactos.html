@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIENES SOMOS!? - Contactos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="contactos.css">
+    <link rel="stylesheet" href="formulario.css">
+    <script src="animacion.js"></script>
+</head>
+<body>
+     <header>
+        <div class="ancho"> <div class="logo">
+    <a href="index.html">
+        <img src="img/logitov3.png" alt="Logo Quienes Somos" class="logo-imagen">
+    </a>
+</div>
+            <nav class="menu">
+                <ul> 
+                    <li><a class="boton01" href="index.html">Inicio</a></li>
+                    <li><a class="boton01" href="porfolios.html">Porfolios</a></li>
+                    <li><a class="boton01" href="contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+     </header>
+
+     <main>
+        <section class="contenedor-contactos">
+            <div class="tarjeta-contactos">
+                <h1 class="titulo-contactos">Nuestro Equipo</h1>
+                <p class="subtitulo-contactos">Contacta directamente con nuestros artistas multimediales</p>
+                
+                <div class="lista-contactos">
+                    <div class="contacto-item">
+                        <div class="nombre-contacto">Sofo Martin</div>
+                        <div class="email-contacto">martinsofo14@gmail.com</div>
+                    </div>
+                    
+                    <div class="contacto-item">
+                        <div class="nombre-contacto">Marcos Montenegro</div>
+                        <div class="email-contacto">marcosjmontenegro1522@gmail.com</div>
+                    </div>
+                    
+                    <div class="contacto-item">
+                        <div class="nombre-contacto">Melisa Rodriguez</div>
+                        <div class="email-contacto">melinesa.uni@gmail.com</div>
+                    </div>
+                    
+                    <div class="contacto-item">
+                        <div class="nombre-contacto">Aguiar Agustina</div>
+                        <div class="email-contacto">aguiarmariaagustina@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+            
+            <article class="formulario-consultas">
+                <h2>CONTACTANOS</h2>
+                <p>Completa el formulario</p>
+                
+                <form onsubmit="send(event)" class="form-contacto">
+                    <fieldset>
+                        <legend>Información de Contacto</legend>
+                        
+                        <div class="campo-formulario">
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                    
+                        <div class="campo-formulario">
+                            <textarea id="mensaje" name="mensaje" placeholder="Consulta..." rows="5"></textarea>
+                        </div>
+                        
+                        <div id="mensajeError" class="mensaje-error"></div>
+                        
+                        <button type="submit" class="boton-enviar">Enviar Consulta</button>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+     </main>
+
+     <footer>
+        <div class="ancho">
+            <p>&copy; 2025 QUIENES SOMOS!?. Todos los derechos reservados.</p>
+        </div>
+     </footer>
+
+     <script src="formulario.js"></script>
+</body>
+</html>

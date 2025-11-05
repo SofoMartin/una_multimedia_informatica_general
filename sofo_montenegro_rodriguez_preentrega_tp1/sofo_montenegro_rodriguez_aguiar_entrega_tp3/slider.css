@@ -1,0 +1,92 @@
+#particles-js{ 
+    background: rgb(184, 152, 184);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.ancho-letras{
+    top: 180px; 
+    background:rgba(245, 245, 245,0.8);
+    position: absolute;
+    width: 80%;
+    max-width: 800px;
+    padding: 40px 30px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.letras-slider{
+    width: 100%;
+    margin:auto;
+}
+
+.letras-slider h1{
+    color: rgb(103, 34, 117);
+    font-family: alfa;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.letras-slider p{
+    color: rgb(110, 76, 117);
+    font-size: 18px;
+    font-family: alfa;
+    line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+    .ancho-letras {
+        width: 85%;
+        padding: 35px 25px;
+        top: 170px;
+    }
+    
+    .letras-slider h1 {
+        font-size: 28px;
+    }
+    
+    .letras-slider p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ancho-letras {
+        width: 90%;
+        padding: 30px 20px;
+        top: 190px;
+    }
+    
+    .letras-slider h1 {
+        font-size: 24px;
+    }
+    
+    .letras-slider p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ancho-letras {
+        width: 95%;
+        padding: 20px 15px;
+        top: 250px;
+    }
+    
+    .letras-slider h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .letras-slider p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}

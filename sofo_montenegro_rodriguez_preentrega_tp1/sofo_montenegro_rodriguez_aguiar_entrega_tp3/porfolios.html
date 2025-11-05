@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIENES SOMOS!? - Porfolios</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="porfolio.css">
+    <script src="funciones.js"></script>
+    <script src="animacion.js"></script>
+    <script>
+    window.onload = function() {
+      preloadImages(
+        'img/Agus1.jpg', 'img/Agus2.jpg', 'img/Agus3.jpg',
+        'img/Marcos1.jpg', 'img/Marcos2.jpg', 'img/Marcos3.jpg', 
+        'img/Martin1.jpg', 'img/Martin2.jpg', 'img/Martin3.jpg',
+        'img/Meli1.jpg', 'img/Meli2.jpg', 'img/Meli3.jpg'
+      );
+    };
+    </script>
+</head>
+<body>
+     <header>
+        <div class="ancho"> <div class="logo">
+                <a href="index.html">
+                    <img src="img/logitov3.png" alt="Logo Quienes Somos" class="logo-imagen">
+                </a>
+            </div>
+            <nav class="menu">
+                <ul> 
+                    <li><a class="boton01" href="index.html">Inicio</a></li>
+                    <li><a class="boton01" href="porfolios.html">Porfolios</a></li>
+                    <li><a class="boton01" href="contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+        </div> </header>
+
+     <main>
+        <section class="galeria">
+            <div id="contenedor_imagen_grande">
+                <a onclick="showHideLayers('contenedor_imagen_grande','','hide')" href="#">
+                    <img id="imagen_grande" alt="Imagen ampliada">
+                </a>
+            </div>
+            
+            <a class="miniatura" href="#" onclick="swapImage('imagen_grande','','img/Agus1.jpg',1);showHideLayers('contenedor_imagen_grande','','show')">
+                <img src="img/Agus1.jpg" alt="Agus 1" width="180" height="119">
+                <span>Agus</span>
+            </a>
+
+            <a class="miniatura" href="#" onclick="swapImage('imagen_grande','','img/Agus2.jpg',1);showHideLayers('contenedor_imagen_grande','','show')">
+                <img src="img/Agus2.jpg" alt="Agus 2" width="180" height="119">
+                <span>Agus</span>
+            </a>
+
+            <a class="miniatura" href="#" onclick="swapImage('imagen_grande','','img/Agus3.jpg',1);showHideLayers('contenedor_imagen_grande','','show')">
+                <img src="img/Agus3.jpg" alt="Agus 3" width="180" height="119">
+                <span>Agus</span>
+            </a>
+
+            <a class="miniatura" href="#" onclick="swapImage('imagen_grande','','img/Marcos1.jpg',1);showHideLayers('contenedor_imagen_grande','','show')">
+                <img src="img/Marcos1.jpg" alt="Marcos 1" width="180" height="119">
+                <span>Marcos</span>
+            </a>
+
+            <a class="miniatura" href="#" onclick="swapImage('imagen_grande','','img/Marcos2.jpg',1);showHideLayers('contenedor_imagen_grande','','show')">
+                <img src="img/Marcos2.jpg" alt="Marcos 2" width="180" height="119">
+                <span>Marcos</span>
+            </a>
+
+            <a class="miniatura" href="#" onclick="swapImage('imagen_grande','','img/Marcos3.jpg',1);showHideLayers('contenedor_imagen_grande','','show')">
+                <img src="img/Marcos3.jpg" alt="Marcos 3" width="180" height="119">
+                <span>Marcos</span>
+            </a>
+
+            <a class="miniatura" href="#" onclick="swapImage('imagen_grande','','img/Martin1.jpg',1);showHideLayers('contenedor_imagen_grande','','show')">
+                <img src="img/Martin1.jpg" alt="Martin 1" width="180" height="119">
+                <span>Martin</span>
+            </a>
+
+            <a class="miniatura" href="#" onclick="swapImage('imagen_grande','','img/Martin2.jpg',1);showHideLayers('contenedor_imagen_grande','','show')">
+                <img src="img/Martin2.jpg" alt="Martin 2" width="180" height="119">
+                <span>Martin</span>
+            </a>
+
+            <a class="miniatura" href="#" onclick="swapImage('imagen_grande','','img/Martin3.jpg',1);showHideLayers('contenedor_imagen_grande','','show')">
+                <img src="img/Martin3.jpg" alt="Martin 3" width="180" height="119">
+                <span>Martin</span>
+            </a>
+
+            <a class="miniatura" href="#" onclick="swapImage('imagen_grande','','img/Meli1.jpg',1);showHideLayers('contenedor_imagen_grande','','show')">
+                <img src="img/Meli1.jpg" alt="Meli 1" width="180" height="119">
+                <span>Meli</span>
+            </a>
+
+            <a class="miniatura" href="#" onclick="swapImage('imagen_grande','','img/Meli2.jpg',1);showHideLayers('contenedor_imagen_grande','','show')">
+                <img src="img/Meli2.jpg" alt="Meli 2" width="180" height="119">
+                <span>Meli</span>
+            </a>
+            
+            <a class="miniatura" href="#" onclick="swapImage('imagen_grande','','img/Meli3.jpg',1);showHideLayers('contenedor_imagen_grande','','show')">
+                <img src="img/Meli3.jpg" alt="Meli 3" width="180" height="119">
+                <span>Meli</span>
+            </a>
+        </section>
+     </main>
+
+     <footer>
+        <div class="ancho">
+            <p>&copy; 2025 QUIENES SOMOS!?. Todos los derechos reservados.</p>
+        </div>
+     </footer>
+</body>
+</html>
